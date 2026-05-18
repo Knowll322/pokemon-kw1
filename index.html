@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pocket Beasts: Forest Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="cabinet" aria-label="Pocket Beasts: Forest Journey game">
+      <div class="top-strip">
+        <span class="brand">Pocket Beasts</span>
+        <span class="led" aria-hidden="true"></span>
+      </div>
+      <section class="screen-wrap">
+        <canvas
+          id="game"
+          width="320"
+          height="288"
+          aria-label="Pocket Beasts: Forest Journey pixel game screen"
+        ></canvas>
+      </section>
+      <div class="controls" aria-label="Touch controls">
+        <div class="dpad" aria-label="Directional pad">
+          <button data-key="ArrowUp" class="up" aria-label="Up"></button>
+          <button data-key="ArrowLeft" class="left" aria-label="Left"></button>
+          <button data-key="ArrowRight" class="right" aria-label="Right"></button>
+          <button data-key="ArrowDown" class="down" aria-label="Down"></button>
+        </div>
+        <div class="face-buttons">
+          <button data-key="KeyZ" aria-label="Confirm">A</button>
+          <button data-key="KeyX" aria-label="Back">B</button>
+          <button data-key="Enter" aria-label="Menu">M</button>
+        </div>
+      </div>
+    </main>
+    <script src="src/game.js" defer></script>
+  </body>
+</html>
